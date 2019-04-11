@@ -11,18 +11,16 @@ body {
 
 header {
     display: flex;
-    background-color: white;
     color: black;
     width: 100%;
-    /* justify-content: center; */
     padding: 1em;
-    border-bottom: solid 5px rgb(51, 51, 202);
 }
 
+
 h1 {
-    font-size: 3em;
+    font-size: 4em;
     color: black;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px goldenrod;
+    text-shadow: 0 0 10px orangered, 0 0 5px goldenrod;
 }
 fieldset {
     display: flex;
@@ -34,22 +32,26 @@ fieldset {
     text-align: center;
     border: none;
 }
-
+form {
+    display: flex;
+    flex-direction: column;
+}
 .form-elements {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
     font-size: 1.2em;
     padding: .8em 1em;
     letter-spacing: .4em;
 }
 
 .button {
-    display: flex;
-    justify-content: last baseline;
-    padding: 2%;
+    /* display: flex;
+    justify-content: center; */
 }
 
 #date, #concepts, #entry, #mood {
-    display: block;
+    display: flex;
     justify-content: center;
     margin: auto;
     width: 100%;
