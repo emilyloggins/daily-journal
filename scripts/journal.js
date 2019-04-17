@@ -1,7 +1,7 @@
 console.log("hi");
 
-const journalEntry = [
-{
+const JournalEntry = [
+    {
     date: "April 14, 2019",
     titleConcepts: "DOM",
     entry: "Everything was great!",
