@@ -1,32 +1,47 @@
 console.log("hi");
 
-const objectsJournalEntry = 
+const JournalEntry = [
     {
     date: "April 14, 2019",
     titleConcepts: "DOM",
     entry: "Everything was great!",
     mood: "excited"
-}
-const objectsJournalEntry2 = 
+},
 { 
     date: "April 15, 2019",
     titleConcepts: "query selectors",
     entry: "Everything sucked.",
     mood: "defeated"
-}
-
-const objectsJournalEntry3 =
+},
 {
     date: "April 16, 2019",
     titleConcepts: "nothin",
     entry: "meh",
     mood: "content"
 }
+]
+
+const makeJournalEntryComponent = function(date, titleConcepts, entry, mood) {
+    return `
+    <h2>${titleConcepts}</h2>
+    <p>${date}</p>
+    <p>${mood}</p>
+    <p>${entry}</p>
+    `
+}
+
+const entryContainer = document.querySelector("#container")
 
 
-console.log(objectsJournalEntry);
+for (let i = 0; i < journalEntry.length; i++) {
+    const entries = journalEntry[i]
+    entryContainer.innerHTML += makeJournalEntryComponent(
+        entries.date,
+        entries.titleConcepts,
+        entries.entry,
+        entries.mood
+    )
+}
 
-const entryLog = [];
-entryLog.push(objectsJournalEntry, objectsJournalEntry2, objectsJournalEntry3);
-console.log(entryLog);
+
 
